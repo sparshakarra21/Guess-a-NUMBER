@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin-top: 0;
+    box-sizing: inherit;
+}
+body{
+   background-color: rgb(38, 139, 157);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    position : relative;
+    margin-top: 0;
+    height:35vh;
+    border-bottom: 5px solid rgb(15, 12, 59);
+}
+main{
+    display: flex;
+    height:65vh;
+    align-items: center;
+    justify-content: space-around;
+}
+#between{
+    animation: back 3s infinite;
+}
+.left{
+    width :200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    width:300px;
+    font-size :30px;
+    color:rgb(252, 247, 252);
+     font-family: cursive;
+    font-weight: bolder;
+    
+}
+ 
+#again{
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-style: oblique;
+    background-color: rgb(200, 158, 95);
+    color: rgb(112, 61, 61);
+    margin-bottom: 100px;
+    margin-top: 0;
+    animation : back 3s infinite;
+
+}
+h1{
+    margin-top: 0;
+    width:100%;
+    font-size: 50px;
+    left:50%;
+}
+#heading{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+#between{
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top:30px;
+    right:30px;
+}
+#box{
+    
+    background-color: rgb(159, 133, 155);
+    font-size:100px;
+    width:200px;
+    text-align: center;
+    border : 5px solid rgb(15, 12, 59);
+    border-bottom: 2px solid rgb(15, 12, 59);
+    position: absolute;
+    left:42%;
+    bottom: 0;
+    border-radius: 4px;
+}
+#guess{
+    border : 4px solid black;
+    height:50px;
+    font-size: 15px;
+    background-color: rgb(103, 66, 66);
+    text-align:center;
+    border-color: rgb(22, 66, 52);
+    border-radius: 7px;
+    animation : blink 4s infinite;
+}
+#check{
+    height:50px;
+    width:120px;
+    background-color: rgb(184, 109, 140);
+    font-weight:bolder;
+    font-size: 22px;
+    border-radius: 5px;
+    font-style: italic;
+}
+#check:hover{
+    cursor: pointer;
+}
+@keyframes blink {
+    0%{
+        font-size: 100%;
+    }
+    50%{
+        font-size: 150%;
+    }
+    100%{
+        font-size: 100%;
+    }
+}
+@keyframes back {
+    0%{
+        opacity: 0.75;
+        font-weight:700px;
+    }
+    50%{
+        opacity: 1;
+        font-weight: 800px;
+    }
+    100%{
+        opacity: 0.75;
+        font-weight: 700px;
+    }
+}
+
+

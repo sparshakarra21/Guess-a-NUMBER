@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="b">
+   <header id="header">
+       <h1 id="heading">How Lucky You Are ???</h1>
+       <p id="between">(Guess between 1 and 20)</p>
+       <button id = "again"onclick="startAgain()">START AGAIN!!</button>
+       <div id = "box">?</div>
+   </header> 
+   <main id="main">
+    <section class = "left">
+        <input type="number" id="guess" placeholder="Enter number"/>
+        <br>
+        <button id="check" onclick="checking()">CHECK !!</button>
+    </section>
+    <section  class="right">
+         <p id="msg">Start guessing....</p>
+         <p id="score">
+            score:
+            <span id = "val"></span>
+         </p>   
+         <p id="highscore">High score :
+         <span id="highval">0</span>
+         </p>
+    </section>
+   </main>
+   <script src="index.js"></script>
+</body>
+</html>
